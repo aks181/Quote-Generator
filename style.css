@@ -101,17 +101,24 @@ button:active {
 .loading {
     font-size: 2rem;
     margin-top: 20px;
-    animation: jump 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite;
+    animation: transform 2s linear infinite;
 }
 
-@keyframes jump {
-    from {
-        transform: translateY(-30px);
+@keyframes transform {
+    0% {
+        transform: scale(1.2);
     }
-    to {
-        transform: translateY(30px);
-        
-
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1.2);
     }
 }
 
