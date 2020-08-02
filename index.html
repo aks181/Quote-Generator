@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Random Quote Generator</h1>
+
+    <div class="container" id="container">
+        <div class="quote" id="quote">
+            <i class="fas fa-quote-left"></i>
+            <span class="text" id="text">You can’t get much done in life if you only work on the days when you feel good.</span>
+        </div>
+        <div class="quote-author">
+            <span class="author" id="author">Jerry West</span> 
+        </div>
+        <div class="controls">
+            <button class="tweet" id="tweet" title="Tweet It!">
+            <i class="fab fa-twitter "></i>
+            </button>
+            <button class="new" id="new">New Quote</button>
+        </div>
+    </div>
+
+    <div class="loading" id="loading">Fetching awesome quotes for you...</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
